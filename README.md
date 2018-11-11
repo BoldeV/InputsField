@@ -3,6 +3,7 @@ Creating React components
 
 # Instalation
 npm install
+
 npm start
 
 # settings 

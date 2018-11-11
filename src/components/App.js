@@ -1,4 +1,5 @@
 import { Component } from 'react'
+import PropTypes from 'prop-types'
 import DivInputs from './DivInputs'
 import '../../stylesheets/App.scss'
 
@@ -29,4 +30,8 @@ export default class App extends Component {
             </form>
         )
     }
+}
+
+App.propTypes = {
+    InputsLength: PropTypes.array
 }

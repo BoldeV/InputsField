@@ -12,7 +12,7 @@ const DivInputs = ({ InputsLength=[], onChange=f=>f }) =>
         )}
     </div>
 
-DivInputs.PropTypes = {
+DivInputs.propTypes = {
     InputsLength: PropTypes.array,
     onChange: PropTypes.func
 }

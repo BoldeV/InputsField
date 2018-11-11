@@ -16,16 +16,33 @@
     "react": "^16.6.1",
     "react-dom": "^16.6.1"
   },
+  "jest": {
+    "setupFiles": [
+      "<rootDir>/__test__/global.js"
+    ],
+    "modulePathIgnorePatterns": [
+      "global.js"
+    ],
+    "moduleNameMapper": {
+      "\\.(scss)$": "<rootDir>/node_modules/jest-css-modules"
+    }
+  },
   "devDependencies": {
     "babel-core": "^6.26.3",
+    "babel-jest": "^23.6.0",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "css-loader": "^0.28.11",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.7.0",
+    "jest": "^23.6.0",
+    "jest-css-modules": "^1.1.0",
     "node-sass": "^4.9.4",
     "opener": "^1.5.1",
     "postcss-loader": "^3.0.0",
+    "react-addons-test-utils": "^15.6.2",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "webpack": "^3.12.0"

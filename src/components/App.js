@@ -1,14 +1,20 @@
 import { Component } from 'react'
 import DivInputs from './DivInputs'
+import '../../stylesheets/App.scss'
 
 export default class App extends Component {
 
     checkLength(e,min,max) {
         let value = e.target.value.length
+        let classList = e.target.classList
         if (value < min || value > max) {
-            console.log('error')
+            (classList.contains("correct")) ? 
+                classList.remove("correct") : null
+            classList.add("error")
         } else {
-            console.log('good')
+            (classList.contains("error")) ? 
+                classList.remove("error") : null
+            classList.add("correct")
         }
     }
 

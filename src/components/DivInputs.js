@@ -1,6 +1,7 @@
 import { Component } from 'react'
 import PropTypes from 'prop-types'
 import InputField from './InputField'
+import '../../stylesheets/DivInputs.scss'
 
 const DivInputs = ({ InputsLength=[], onChange=f=>f }) =>
     <div className="inputs-div">
